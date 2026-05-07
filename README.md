@@ -1,58 +1,66 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Employee Management System
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A complete Employee Management System with Laravel Backend API and Flutter Mobile App. Employees with more than 5 years of service and active status are automatically highlighted in green.
 
-## About Laravel
+## 🚀 Features
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+### Backend (Laravel)
+- ✅ RESTful API for employee management
+- ✅ Automatic calculation of years of service based on joining date
+- ✅ Admin panel with Bootstrap 5 UI
+- ✅ CRUD operations (Create, Read, Update, Delete)
+- ✅ Search and filter functionality
+- ✅ Dashboard statistics
+- ✅ MySQL database with Eloquent ORM
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### Frontend (Flutter)
+- ✅ MVVM architecture with BLoC pattern
+- ✅ Employee listing with green highlighting for veterans (5+ years & active)
+- ✅ Add/Edit/Delete employees
+- ✅ Real-time search and filters
+- ✅ Beautiful Material Design UI
+- ✅ Form validation
+- ✅ Responsive design for all screen sizes
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 📱 Screenshots
 
-## Learning Laravel
+### Admin Panel - Employee List
+<img width="1462" height="876" alt="Screenshot 2026-05-07 at 4 14 22 PM" src="https://github.com/user-attachments/assets/3fb4922e-d00d-44c6-9d3c-b11f2a7619a8" />
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Add Employee Form
+<img width="1462" height="876" alt="Screenshot 2026-05-07 at 4 14 31 PM" src="https://github.com/user-attachments/assets/1a8c811d-0a2e-4c97-bed7-77149f8b74b3" />
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
 
-## Agentic Development
+### Employee Details
+<img width="1301" height="703" alt="Screenshot 2026-05-07 at 4 16 39 PM" src="https://github.com/user-attachments/assets/33b085d4-00c6-4c76-b007-d24e42c9f488" />
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
 
+### Flutter App - Employee List
+<img width="1206" height="2622" alt="simulator_screenshot_F18E5F16-2A8F-4AE8-9E47-39437259707B" src="https://github.com/user-attachments/assets/8265770e-c525-415e-9e2a-65bf0867a0ee" />
+
+### Add Employee Screen
+<img width="1206" height="2622" alt="simulator_screenshot_005E5BC6-16AD-4CF7-8979-8CA0EDAD0AC7" src="https://github.com/user-attachments/assets/bca17871-2511-45fc-ac9b-487e2e926919" />
+
+## 🛠️ Tech Stack
+
+### Backend
+- **Framework**: Laravel 11
+- **Database**: MySQL
+- **PHP**: 8.1+
+- **UI**: Bootstrap 5, jQuery, AJAX
+
+### Frontend
+- **Framework**: Flutter
+- **State Management**: BLoC
+- **Architecture**: MVVM
+- **HTTP Client**: Dio/Http
+
+## 📋 Prerequisites
+
+### For Laravel Backend
 ```bash
-composer require laravel/boost --dev
-
-php artisan boost:install
-```
-
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+PHP >= 8.1
+Composer
+MySQL >= 5.7
+Node.js & NPM (for frontend assets)
